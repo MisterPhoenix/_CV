@@ -37,6 +37,17 @@
             <li id="tdip"></li>
         </ul>
     </main>
-    <script></script>
+    
+    <script>
+        class Poste {
+            constructor(job){
+                this.job = job;
+            }
+        }
+
+        const job1 = new Poste("Développement Web");
+
+        document.getElementById("poste").innerHTML = job1.job;
+    </script>
 </body>
 </html>
